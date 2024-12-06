@@ -8,8 +8,9 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gradio_huggingfacehub_search"
-version = "0.0.7"
-description = "Simple component for creating prompt weighting for real-time generation."
+version = "0.0.9"
+description = "Gradio component for searching Hugging Face Hub models, datasets, Spaces, and more"
+short_description = "Gradio component for searching Hugging Face Hub models, datasets, Spaces, and more"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"

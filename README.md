@@ -9,22 +9,22 @@ pinned: false
 app_file: space.py
 ---
 
-# `gradio_huggingfacehubsearch`
-<img alt="Static Badge" src="https://img.shields.io/badge/version%20-%200.0.1%20-%20orange">  
+# `gradio_huggingfacehub_search`
+<a href="https://pypi.org/project/gradio_huggingfacehub_search/" target="_blank"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/gradio_huggingfacehub_search"></a> <a href="https://github.com/radames/gradio_huggingfacehub_search/issues" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/Issues-white?logo=github&logoColor=black"></a> <a href="https://huggingface.co/spaces/radames/gradio_huggingfacehub_search/discussions" target="_blank"><img alt="Static Badge" src="https://img.shields.io/badge/%F0%9F%A4%97%20Discuss-%23097EFF?style=flat&logoColor=black"></a>
 
-Simple component for creating prompt weighting for real-time generation.
+Gradio component for searching Hugging Face Hub models, datasets, Spaces, and more
 
 ## Installation
 
 ```bash
-pip install gradio_huggingfacehubsearch
+pip install gradio_huggingfacehub_search
 ```
 
 ## Usage
 
 ```python
 import gradio as gr
-from gradio_huggingfacehubsearch import HuggingfaceHubSearch
+from gradio_huggingfacehub_search import HuggingfaceHubSearch
 
 
 example = HuggingfaceHubSearch().example_value()
