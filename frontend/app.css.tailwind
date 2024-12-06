@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+@layer base {
+	button {
+		@apply font-normal;
+	}
+
+	strong {
+		@apply font-semibold;
+	}
+
+	html.dark {
+		--scrollbarBG: #020011;
+		--thumbBG: #374151;
+	}
+
+	.dark {
+		color-scheme: dark;
+	}
+	.light {
+		color-scheme: light;
+	}
+	.dark *::-webkit-scrollbar {
+		width: 11px;
+		height: 11px;
+	}
+	.dark * {
+		scrollbar-width: thin;
+		scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+	}
+
+	.dark input,
+	.dark textarea,
+	.dark [contenteditable] {
+		caret-color: white !important;
+	}
+
+	.dark *::-webkit-scrollbar-track {
+		background: var(--scrollbarBG);
+	}
+	.dark *::-webkit-scrollbar-thumb {
+		background-color: var(--thumbBG);
+		border-radius: 6px;
+		border: 3px solid var(--scrollbarBG);
+	}
+
+	label:has(input[type='checkbox']),
+	label:has(input[type='radio']) {
+		@apply cursor-pointer;
+	}
+
+	label:has(input[type='checkbox']:disabled),
+	label:has(input[type='radio']:disabled) {
+		@apply cursor-not-allowed text-gray-400 dark:text-gray-500;
+	}
+	.form-input-alt {
+		@apply h-10 px-3 border !border-gray-200 !rounded-lg shadow-inner outline-none focus:ring-1 focus:ring-inset focus:ring-indigo-200 dark:focus:ring-indigo-50 focus:shadow-inner placeholder-gray-400 dark:bg-gray-925 dark:!border-gray-850;
+	}
+}
+
+
+.custom-component > div:first-child {
+  overflow: unset !important;
+}
