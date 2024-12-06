@@ -31,15 +31,9 @@ classifiers = [
   'Topic :: Scientific/Engineering :: Visualization',
 ]
 
-# The repository and space URLs are optional, but recommended.
-# Adding a repository URL will create a badge in the auto-generated README that links to the repository.
-# Adding a space URL will create a badge in the auto-generated README that links to the space.
-# This will make it easy for people to find your deployed demo or source code when they
-# encounter your project in the wild.
-
-# [project.urls]
-# repository = "your github repository"
-# space = "your space url"
+[project.urls]
+repository = "https://github.com/radames/gradio_huggingfacehub_search"
+space = "https://huggingface.co/spaces/radames/gradio_huggingfacehub_search"
 
 [project.optional-dependencies]
 dev = ["build", "twine"]
