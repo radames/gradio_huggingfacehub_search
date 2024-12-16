@@ -35,7 +35,7 @@ class HuggingfaceHubSearch(Component):
         elem_classes: list[str] | str | None = None,
         render: bool = True,
         search_type: str | list[str] | None = None,
-        sumbit_on_select: bool = False,
+        submit_on_select: bool = False,
     ):
         """
         Parameters:
@@ -53,13 +53,13 @@ class HuggingfaceHubSearch(Component):
             elem_classes: An optional list of strings that are assigned as the classes of this component in the HTML DOM. Can be used for targeting CSS styles.
             render: If False, component will not render be rendered in the Blocks context. Should be used if the intention is to assign event listeners now but render the component later.
             search_type: Type of search you want to enable your quicksearch "model", "dataset","space","org", "user" or a list of these.
-            sumbit_on_select: If true, the component will submit when the user selects a value from the dropdown.
+            submit_on_select: If true, the component will submit when the user selects a value from the dropdown.
         """
         self.placeholder = placeholder
         self.search_type = (
             [search_type] if isinstance(search_type, str) else search_type or []
         )
-        self.sumbit_on_select = sumbit_on_select
+        self.submit_on_select = submit_on_select
         super().__init__(
             label=label,
             every=every,
