@@ -239,7 +239,7 @@ bool
 
 </td>
 <td align="left"><code>True</code></td>
-<td align="left">If False, component will not render be rendered in the Blocks context. Should be used if the intention is to assign event listeners now but render the component later.</td>
+<td align="left">If False, component will not be rendered in the Blocks context. Should be used if the intention is to assign event listeners now but render the component later.</td>
 </tr>
 
 <tr>
